@@ -65,9 +65,25 @@ myHistorySlide =
 
 whyElm : Slides.Slide
 whyElm =
-    Slides.mdFragments
-        [ "# Why Elm?"
-        ]
+    Slides.html <|
+        div
+            [ class "why-elm"
+            ]
+            [ h1 [] [ text "Why Elm?" ]
+            , img
+                [ alt "JS fatigue vs. Elm"
+                , src "images/js-fatigue-vs-elm.jpg"
+                ]
+                []
+            , div []
+                [ em []
+                    [ text "from "
+                    , a
+                        [ href "https://github.com/dwyl/learn-elm/" ]
+                        [ text "github.com/dwyl/learn-elm" ]
+                    ]
+                ]
+            ]
 
 
 whyElmIsReliable : Slides.Slide
