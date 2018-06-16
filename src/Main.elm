@@ -27,9 +27,12 @@ main =
         }
         [ titleSlide
         , myHistorySlide
+        , pollAudience
         , whyElm
-        , whyElmIsReliable
+        , howElmIsReliable
         , howElmIsReliableExample1
+        , elmReducesJavaScriptFatigue
+        , howElmReducesJavaScriptFatigue
         ]
 
 
@@ -54,6 +57,7 @@ myHistorySlide : Slides.Slide
 myHistorySlide =
     Slides.mdFragments
         [ "# My history"
+        , "* over 10 years development experience"
         , "* Java -> C# -> JavaScript -> Elm"
         , """* JavaScript = My first 💖
   * Do (allthethings)
@@ -64,6 +68,29 @@ myHistorySlide =
         ]
 
 
+pollAudience : Slides.Slide
+pollAudience =
+    Slides.html <|
+        div
+            [ class "poll-audience"
+            ]
+            [ h1 [] [ text "Poll" ]
+            , img
+                [ alt "Show of hands"
+                , src "images/poll.jpg"
+                ]
+                []
+            , div []
+                [ em []
+                    [ text "image from "
+                    , a
+                        [ href "http://www.slate.com/articles/news_and_politics/politics/2016/05/how_to_read_a_poll.html" ]
+                        [ text "slate.com" ]
+                    ]
+                ]
+            ]
+
+
 whyElm : Slides.Slide
 whyElm =
     Slides.html <|
@@ -72,23 +99,15 @@ whyElm =
             ]
             [ h1 [] [ text "Why Elm?" ]
             , img
-                [ alt "JS fatigue vs. Elm"
-                , src "images/js-fatigue-vs-elm.jpg"
+                [ alt "PLZ not another JS framework"
+                , src "images/not-another-js-framework.jpg"
                 ]
                 []
-            , div []
-                [ em []
-                    [ text "from "
-                    , a
-                        [ href "https://github.com/dwyl/learn-elm/" ]
-                        [ text "github.com/dwyl/learn-elm" ]
-                    ]
-                ]
             ]
 
 
-whyElmIsReliable : Slides.Slide
-whyElmIsReliable =
+howElmIsReliable : Slides.Slide
+howElmIsReliable =
     Slides.mdFragments
         [ "# Elm is reliable"
         , "\"No runtime exceptions in practice\""
@@ -116,4 +135,39 @@ tom = { name = "Tom", age = Just 42 }
 sue = { name = "Sue", age = Nothing }
 ```
         """
+        ]
+
+
+elmReducesJavaScriptFatigue : Slides.Slide
+elmReducesJavaScriptFatigue =
+    Slides.html <|
+        div
+            [ class "elm-reduces-js-fatigue"
+            ]
+            [ h1 [] [ text "Elm reduces JavaScript fatigue" ]
+            , img
+                [ alt "JS fatigue vs. Elm"
+                , src "images/js-fatigue-vs-elm.jpg"
+                ]
+                []
+            , div []
+                [ em []
+                    [ text "image from "
+                    , a
+                        [ href "https://github.com/dwyl/learn-elm/" ]
+                        [ text "github.com/dwyl/learn-elm" ]
+                    ]
+                ]
+            ]
+
+
+howElmReducesJavaScriptFatigue : Slides.Slide
+howElmReducesJavaScriptFatigue =
+    Slides.mdFragments
+        [ "# How Elm reduces JavaScript fatigue"
+        , "* Cohesive ecosystem"
+        , "* Different language, focused on simplicity"
+        , "* One framework"
+        , "* Libraries forced to follow semver and provide documentation"
+        , "* Compile-time errors"
         ]

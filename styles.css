@@ -2,10 +2,27 @@
   text-align: center;
 }
 
+.poll-audience {
+  text-align: center;
+}
+
+.poll-audience img {
+  opacity: 0.8;
+  width: 400px;
+}
+
 .why-elm {
   text-align: center;
 }
 
 .why-elm img {
+  width: 400px;
+}
+
+.elm-reduces-js-fatigue {
+  text-align: center;
+}
+
+.elm-reduces-js-fatigue img {
   width: 400px;
 }
