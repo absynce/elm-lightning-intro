@@ -34,6 +34,7 @@ main =
         , howElmIsReliableExample2Maybe
         , elmReducesJavaScriptFatigue
         , howElmReducesJavaScriptFatigue
+        , whatNext
         ]
 
 
@@ -184,6 +185,16 @@ howElmReducesJavaScriptFatigue =
         , "* Cohesive ecosystem"
         , "* Different language, focused on simplicity"
         , "* One framework"
-        , "* Libraries forced to follow semver and provide documentation"
+        , "* Libraries must follow semantic versioning and provide documentation"
         , "* Compile-time errors"
+        ]
+
+
+whatNext : Slides.Slide
+whatNext =
+    Slides.mdFragments
+        [ "# What next?"
+        , "* Try Elm at [elm-lang.org](http://elm-lang.org/try)"
+        , "* ...or try my Intro to Elm series at [absynce.github.io](http://absynce.github.io)"
+        , "Find me everywhere @absynce"
         ]
