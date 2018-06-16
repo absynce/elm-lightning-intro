@@ -29,6 +29,7 @@ main =
         , myHistorySlide
         , whyElm
         , whyElmIsReliable
+        , howElmIsReliableExample1
         ]
 
 
@@ -41,7 +42,7 @@ titleSlide =
                 , src "images/Elm_logo.png"
                 ]
                 []
-            , h1 [] [ text "Elm Enlightening" ]
+            , h1 [] [ text "Elm Enlightening Eville" ]
             , h2 [] [ text "Reliable Web Development" ]
             , div []
                 [ em [] [ text "by Jared M. Smith" ]
@@ -96,4 +97,23 @@ whyElmIsReliable =
           </p>&mdash; Richard Feldman (@rtfeldman) <a href="https://twitter.com/rtfeldman/status/961051166783213570?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 """
+        ]
+
+
+howElmIsReliableExample1 : Slides.Slide
+howElmIsReliableExample1 =
+    Slides.mdFragments
+        [ "# No `null` or `undefined`"
+        , """
+```elm
+-- A person, but maybe we do not know their age.
+type alias Person =
+    { name : String
+    , age : Maybe Int
+    }
+
+tom = { name = "Tom", age = Just 42 }
+sue = { name = "Sue", age = Nothing }
+```
+        """
         ]
