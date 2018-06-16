@@ -29,8 +29,9 @@ main =
         , myHistorySlide
         , pollAudience
         , whyElm
-        , howElmIsReliable
-        , howElmIsReliableExample1
+        , elmIsReliable
+        , howElmIsReliableExample1CompilerError
+        , howElmIsReliableExample2Maybe
         , elmReducesJavaScriptFatigue
         , howElmReducesJavaScriptFatigue
         ]
@@ -106,8 +107,8 @@ whyElm =
             ]
 
 
-howElmIsReliable : Slides.Slide
-howElmIsReliable =
+elmIsReliable : Slides.Slide
+elmIsReliable =
     Slides.mdFragments
         [ "# Elm is reliable"
         , "\"No runtime exceptions in practice\""
@@ -119,8 +120,23 @@ howElmIsReliable =
         ]
 
 
-howElmIsReliableExample1 : Slides.Slide
-howElmIsReliableExample1 =
+howElmIsReliableExample1CompilerError : Slides.Slide
+howElmIsReliableExample1CompilerError =
+    Slides.html <|
+        div
+            [ class "elm-compiler-error"
+            ]
+            [ h1 [] [ text "The Elm compiler has your back" ]
+            , img
+                [ alt "Elm compiler error - name misspelled"
+                , src "images/elm-compiler-error.png"
+                ]
+                []
+            ]
+
+
+howElmIsReliableExample2Maybe : Slides.Slide
+howElmIsReliableExample2Maybe =
     Slides.mdFragments
         [ "# No `null` or `undefined`"
         , """
