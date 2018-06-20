@@ -26,3 +26,7 @@
 .elm-reduces-js-fatigue img {
   width: 400px;
 }
+
+img.maybe-example {
+  border-radius: 15px;
+}

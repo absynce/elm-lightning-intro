@@ -138,20 +138,14 @@ howElmIsReliableExample1CompilerError =
 
 howElmIsReliableExample2Maybe : Slides.Slide
 howElmIsReliableExample2Maybe =
-    Slides.mdFragments
-        [ "# No `null` or `undefined`"
-        , """
-```elm
--- A person, but maybe we do not know their age.
-type alias Person =
-    { name : String
-    , age : Maybe Int
-    }
-
-tom = { name = "Tom", age = Just 42 }
-sue = { name = "Sue", age = Nothing }
-```
-        """
+    Slides.htmlFragments
+        [ h1 [] [ text "No null or undefined" ]
+        , img
+            [ alt "Maybe example"
+            , class "maybe-example"
+            , src "images/maybe-code.png"
+            ]
+            []
         ]
 
 
