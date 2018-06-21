@@ -16591,8 +16591,12 @@ var _user$project$Main$whatNext = _xarvh$elm_slides$Slides$mdFragments(
 				_0: '* ...or try my Intro to Elm series at [absynce.github.io](http://absynce.github.io)',
 				_1: {
 					ctor: '::',
-					_0: 'Find me everywhere:\n<br />\n@absynce\n<br />\n![My profile pic](https://gravatar.com/avatar/b10e25a444d72682d875ff745166b91c?s=188)',
-					_1: {ctor: '[]'}
+					_0: '* Embed in an existing app',
+					_1: {
+						ctor: '::',
+						_0: 'Find me everywhere:\n<br />\n@absynce\n<br />\n![My profile pic](https://gravatar.com/avatar/b10e25a444d72682d875ff745166b91c?s=188)',
+						_1: {ctor: '[]'}
+					}
 				}
 			}
 		}
@@ -16616,7 +16620,11 @@ var _user$project$Main$howElmReducesJavaScriptFatigue = _xarvh$elm_slides$Slides
 						_1: {
 							ctor: '::',
 							_0: '* Compile-time errors',
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: '* Easy and enjoyable refactoring',
+								_1: {ctor: '[]'}
+							}
 						}
 					}
 				}
