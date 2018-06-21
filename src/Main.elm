@@ -22,7 +22,7 @@ main =
                             (Css.rgb 255 255 255)
                             (Css.rgb 230 230 230)
                             (Css.px 30)
-                            (Css.hex "60B5CC")
+                            (Css.hex "323642")
                         )
         }
         [ titleSlide
@@ -48,7 +48,7 @@ titleSlide =
                 ]
                 []
             , h1 [] [ text "Elm Enlightening Eville" ]
-            , h2 [] [ text "Reliable Web Development" ]
+            , h2 [ class "sub-title" ] [ text "Reliable Web Development" ]
             , div []
                 [ em [] [ text "by Jared M. Smith" ]
                 ]
@@ -110,14 +110,21 @@ whyElm =
 
 elmIsReliable : Slides.Slide
 elmIsReliable =
-    Slides.mdFragments
-        [ "# Elm is reliable"
-        , "\"No runtime exceptions in practice\""
-        , """<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After 2 years and 200,000 lines of production <a href="https://twitter.com/elmlang?ref_src=twsrc%5Etfw">@elmlang</a> code, we got our first production runtime exception.
-          <br/><br/>[...]
-          </p>&mdash; Richard Feldman (@rtfeldman) <a href="https://twitter.com/rtfeldman/status/961051166783213570?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-"""
+    Slides.htmlFragments
+        [ h1 [] [ text "Elm is reliable" ]
+        , blockquote [] [ text "\"No runtime exceptions in practice\"" ]
+        , img
+            [ alt "Elm runtime exception tweet"
+            , class "runtime-exception-tweet"
+            , src "images/elm-runtime-exception-tweet.gif"
+            ]
+            []
+
+        --         , """<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After 2 years and 200,000 lines of production <a href="https://twitter.com/elmlang?ref_src=twsrc%5Etfw">@elmlang</a> code, we got our first production runtime exception.
+        --           <br/><br/>[...]
+        --           </p>&mdash; Richard Feldman (@rtfeldman) <a href="https://twitter.com/rtfeldman/status/961051166783213570?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
+        -- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        -- """
         ]
 
 
