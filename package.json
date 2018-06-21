@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "description": "Lightning intro to Elm presentation",
   "scripts": {
-    "build": "elm make src/Main.elm --output=elm.js --debug",
+    "build": "elm make src/Main.elm --output=elm.js",
     "dev": "npm run watch -s & npm run start",
     "start": "elm-reactor -p 8082",
     "test": "echo \"Error: no test specified\" && exit 1",
