@@ -1,3 +1,10 @@
+blockquote {
+  border-left: 2px solid #60b5cc;
+  margin-left: 0;
+  opacity: 0.85;
+  padding-left: 10px;
+}
+
 .title-slide {
   text-align: center;
 }
@@ -21,6 +28,10 @@
 
 .runtime-exception-tweet {
   width: 400px;
+}
+
+.elm-compiler-error img {
+  border-radius: 15px;
 }
 
 .elm-reduces-js-fatigue {

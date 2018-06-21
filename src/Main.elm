@@ -111,8 +111,12 @@ whyElm =
 elmIsReliable : Slides.Slide
 elmIsReliable =
     Slides.htmlFragments
-        [ h1 [] [ text "Elm is reliable" ]
-        , blockquote [] [ text "\"No runtime exceptions in practice\"" ]
+        [ h1
+            [ class "elm-is-reliable" ]
+            [ text "Elm is reliable" ]
+        , blockquote
+            [ class "elm-is-reliable" ]
+            [ text "\"No runtime exceptions in practice\"" ]
         , img
             [ alt "Elm runtime exception tweet"
             , class "runtime-exception-tweet"
