@@ -59,7 +59,7 @@ myHistorySlide : Slides.Slide
 myHistorySlide =
     Slides.mdFragments
         [ "# My history"
-        , "* over 10 years development experience"
+        , "* \\> 10 years development experience"
         , "* Java -> C# -> JavaScript -> Elm"
         , """* JavaScript = My first 💖
   * Do (allthethings)

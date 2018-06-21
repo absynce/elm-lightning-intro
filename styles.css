@@ -14,6 +14,7 @@ blockquote {
 }
 
 .poll-audience img {
+  border-radius: 15px;
   opacity: 0.8;
   width: 400px;
 }
@@ -23,6 +24,7 @@ blockquote {
 }
 
 .why-elm img {
+  border-radius: 15px;
   width: 400px;
 }
 
@@ -39,9 +41,11 @@ blockquote {
 }
 
 .elm-reduces-js-fatigue img {
+  border-radius: 15px;
   width: 400px;
 }
 
 img.maybe-example {
   border-radius: 15px;
+  width: 650px;
 }
