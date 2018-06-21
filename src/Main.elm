@@ -192,6 +192,7 @@ howElmReducesJavaScriptFatigue =
         , "* One framework"
         , "* Libraries must follow semantic versioning and provide documentation"
         , "* Compile-time errors"
+        , "* Easy and enjoyable refactoring"
         ]
 
 
@@ -201,6 +202,7 @@ whatNext =
         [ "# What next?"
         , "* Try Elm at [elm-lang.org](http://elm-lang.org/try)"
         , "* ...or try my Intro to Elm series at [absynce.github.io](http://absynce.github.io)"
+        , "* Embed in an existing app"
         , """Find me everywhere:
 <br />
 @absynce
