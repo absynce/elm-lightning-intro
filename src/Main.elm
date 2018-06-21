@@ -201,5 +201,9 @@ whatNext =
         [ "# What next?"
         , "* Try Elm at [elm-lang.org](http://elm-lang.org/try)"
         , "* ...or try my Intro to Elm series at [absynce.github.io](http://absynce.github.io)"
-        , "Find me everywhere @absynce"
+        , """Find me everywhere:
+<br />
+@absynce
+<br />
+![My profile pic](https://gravatar.com/avatar/b10e25a444d72682d875ff745166b91c?s=188)"""
         ]
